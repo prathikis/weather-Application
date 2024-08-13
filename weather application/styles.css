@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #222;
+}
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.search input {
+    flex: 1;
+    border-radius: 30px;
+    color: #555;
+    padding: 10px 25px;
+    background-color: #ebfffc;
+    height: 60px;
+    margin-right: 16px;
+    font-size: 18px;
+    outline: 0;
+    border: 0;
+}
+.search button {
+    outline: 0;
+    border: 0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+.search button img {
+    width: 18px;
+}
+.weather-icon {
+    width: 100%;
+    max-width: 170px;
+    margin-top: 30px;
+}
+.weather h1 {
+    font-weight: 500;
+    font-size: 80px;
+}
+.weather h2 {
+    font-weight: 400;
+    font-size: 45px;
+    margin-top: -10px;
+}
+.details {
+    margin-top: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        padding: 30px 25px;
+    }
+    .search input, .search button {
+        height: 50px;
+    }
+    .search input {
+        font-size: 16px;
+    }
+    .weather h1 {
+        font-size: 60px;
+    }
+    .weather h2 {
+        font-size: 35px;
+    }
+    .humidity, .wind {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px 15px;
+    }
+    .search {
+        flex-direction: column;
+    }
+    .search input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        height: 50px;
+    }
+    .search button {
+        height: 50px;
+        width: 50px;
+    }
+    .weather h1 {
+        font-size: 50px;
+    }
+    .weather h2 {
+        font-size: 30px;
+    }
+    .humidity, .wind {
+        font-size: 20px;
+    }
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size:14px;
+    margin-top: 10px;
+    display: none;
+}
